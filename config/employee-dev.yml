@@ -1,2 +1,9 @@
-server:
-  port: 8010
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG  # 注册中心的服务名
+      profile: dev  # 指定配置文件的环境
